@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Product Priview Component</title>
-</head>
-<body class="font-fontBody bg-Cream flex jsutify-center items-center self-center md:mt-20 m-x-auto px-5 md:px-0 py-4 md:py-0">
-        <div class="bg-White flex flex-col jsutify-between rounded-2xl w-full md:w-1/2 shadow-md md:flex-row md:space-x-4 m-auto">
-            <div class="img h-80 md:h-auto md:rounded-l-2xl">
-                <img src="./images/image-product-desktop.jpg" alt=""class="hidden h-full rounded-l-2xl md:block">
-                
-            </div>
+  </head>
+  <body
+    class="font-fontBody bg-Cream flex jsutify-center items-center self-center md:mt-20 m-x-auto px-5 md:px-0 py-4 md:py-0"
+  >
+    <div
+      class="bg-White flex flex-col jsutify-between rounded-2xl w-full md:w-1/2 shadow-md md:flex-row md:space-x-4 m-auto"
+    >
+      <picture>
+        <source
+          media="(max-width:650px)"
+          srcset="./images/image-product-mobile.jpg"
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt=""
+          class="h-full rounded-t-2xl md:rounded-none md:rounded-l-2xl"
+        />
+      </picture>
 
-            <div class="px-10">
-                <p class="py-2 text-Darkgrayishblue">
-                    PERFUME
-                </p>
-                <h1 class="py-4 font-fontHead font-bold text-Verydarkblue text-3xl md:text-4xl">Gabrielle Essence Eau De Parfum</h1>
+      <div class="px-10">
+        <p class="py-2 text-Darkgrayishblue">PERFUME</p>
+        <h1
+          class="py-4 font-fontHead font-bold text-Verydarkblue text-3xl md:text-4xl"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
 
-                <p class="text-Darkgrayishblue max-w-md py-2">
-                    A floral, solar and voluptuous interpretation composed by Olivier Ploge, Perfume-Creator for the House of CHANEL.
-                </p>
+        <p class="text-Darkgrayishblue max-w-md py-2">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Ploge, Perfume-Creator for the House of CHANEL.
+        </p>
 
-                <p class="pt-4 font-bold text-5xl text-Darkcyan">$149.99 <span class="pl-2 text-sm font-fontHead text-Darkgrayishblue line-through">$199</span></p>
+        <p class="pt-4 font-bold text-5xl text-Darkcyan">
+          $149.99
+          <span
+            class="pl-2 text-sm font-fontHead text-Darkgrayishblue line-through"
+            >$199</span
+          >
+        </p>
 
-                <div class="flex py-4">
-                    <a href="#" class="flex w-full justify-center rounded-2xl bg-Darkcyan hover:bg-green-900 px-8 py-4 whitespace-nowrap font-bold text-White md:w-auto"><img class="pr-4" src="./images/icon-cart.svg" alt="">Add to Cart</a>
-                </div>
-
-            </div>
-
+        <div class="flex py-4">
+          <a
+            href="#"
+            class="flex w-full justify-center rounded-2xl bg-Darkcyan hover:bg-green-900 px-8 py-4 whitespace-nowrap font-bold text-White md:w-auto"
+            ><img class="pr-4" src="./images/icon-cart.svg" alt="" />Add to
+            Cart</a
+          >
         </div>
-    
-
-
-</body>
+      </div>
+    </div>
+  </body>
 </html>
